@@ -19,6 +19,9 @@ const SnackLayout = () => {
     ]
 
     return(
+        <><h1>BIG BOY DELUXE VENDING</h1>
+            <h2> Pick an item, any item!</h2>
+            <hr></hr>
         <div className="snackLayoutDiv">
             {snackImages.map((image, index) => (
                 <div key={index}>
@@ -29,6 +32,7 @@ const SnackLayout = () => {
                 </div>
             ))}
         </div>
+        </>
     )
 }
 
