@@ -1,0 +1,17 @@
+.snackImage {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .snackLayoutDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    margin: auto;
+    background-color: lightcyan;
+    height: 100%;
+    text-align: center;
+  }
+  
