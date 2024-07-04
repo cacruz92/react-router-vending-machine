@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./SnackLayout.css"
 import butterfinger from "./assets/images/butterfinger.png"
 import funyuns from "./assets/images/funyuns.png"
@@ -14,15 +15,17 @@ const SnackLayout = () => {
         {src: gatorade, alt: 'Gatorade', title: 'Gatorade'},
         {src: monster, alt: 'Monster', title: 'Monster'},
         {src: water, alt: 'Water', title: 'Water'},
-        {src: swissroll, alt: 'Swiss Roll', title: 'Swiss Roll'}
+        {src: swissroll, alt: 'Swiss Roll', title: 'SwissRoll'}
     ]
 
     return(
         <div className="snackLayoutDiv">
             {snackImages.map((image, index) => (
-                <div>
+                <div key={index}>
+                    <Link to={`/snacks/${image.title.toLowerCase()}`}>
                     <img src={image.src} alt={image.alt} className="snackImage"/>
                     <h2>{image.title}</h2>
+                    </Link>
                 </div>
             ))}
         </div>

@@ -1,6 +1,6 @@
 .App {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +12,7 @@
   background-color: lightcyan;
   height: 100%;
   text-align: center;
+  border: 5px black solid;
 }
 
 h1 {
